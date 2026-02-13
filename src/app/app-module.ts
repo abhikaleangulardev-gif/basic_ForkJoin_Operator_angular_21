@@ -3,14 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
+import { Forkjoin } from './component/forkjoin/forkjoin';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    App
+    App,
+    Forkjoin
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()
